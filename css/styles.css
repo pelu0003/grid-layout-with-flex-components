@@ -32,3 +32,51 @@ body {
   .icon {
     font-size: 4rem;
   }
+
+  .emojis {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+      "smile beer"
+      "laugh leaf"
+    ;
+    gap: 20px;
+  }
+
+  .emojis :nth-child(1){
+    grid-area: smile;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+  }
+
+  .emojis :nth-child(2){
+    grid-area: beer;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .emojis :nth-child(3){
+    grid-area: laugh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .emojis :nth-child(4){
+    grid-area: leaf;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .emojis :nth-child(4) .icon{
+    padding-top: 16px;
+  }
